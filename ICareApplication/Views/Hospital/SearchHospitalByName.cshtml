@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "SearchHospitalByName";
+}
+
+<h2>SearchHospitalByName</h2>
+
+@using (Html.BeginForm())
+{
+    <table cellspacing="10">
+        <tr>
+            <td colspan="2"><b>Search Hospital By Name</b></td>
+        </tr>
+        <tr>
+            <td>Hospital Name</td>
+            <td>@Html.TextBox("txtHospital", null, new { @class = "form-control" })</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Search" class="btn btn-default" />
+            </td>
+        </tr>
+    </table>
+
+}

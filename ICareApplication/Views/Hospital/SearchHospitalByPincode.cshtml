@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "SearchHospitalByPincode";
+}
+
+<h2>SearchHospitalByPincode</h2>
+@using (Html.BeginForm())
+{
+    <table cellspacing="10">
+        <tr>
+            <td colspan="2"><b>Search Hospital By Pincode</b></td>
+        </tr>
+        <tr>
+            <td>Hospital Pincode</td>
+            <td>@Html.TextBox("txtPincode",null, new { @class = "form-control" })</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Search" class="btn btn-default" />
+            </td>
+        </tr>
+    </table>
+
+}
